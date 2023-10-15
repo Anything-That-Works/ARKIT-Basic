@@ -11,6 +11,10 @@
 		056431E82AD59DAF003B1A1F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056431E72AD59DAF003B1A1F /* ContentView.swift */; };
 		056431EA2AD59DB1003B1A1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 056431E92AD59DB1003B1A1F /* Assets.xcassets */; };
 		056431ED2AD59DB1003B1A1F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 056431EC2AD59DB1003B1A1F /* Preview Assets.xcassets */; };
+		0573C3362ADB938C00287FCC /* CustomARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0573C3352ADB938C00287FCC /* CustomARView.swift */; };
+		0573C3382ADB947600287FCC /* CustomARViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0573C3372ADB947600287FCC /* CustomARViewRepresentable.swift */; };
+		0573C33B2ADBB45B00287FCC /* ARAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0573C33A2ADBB45B00287FCC /* ARAction.swift */; };
+		0573C33D2ADBB4BA00287FCC /* ARManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0573C33C2ADBB4BA00287FCC /* ARManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		056431E72AD59DAF003B1A1F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		056431E92AD59DB1003B1A1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		056431EC2AD59DB1003B1A1F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0573C3352ADB938C00287FCC /* CustomARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomARView.swift; sourceTree = "<group>"; };
+		0573C3372ADB947600287FCC /* CustomARViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomARViewRepresentable.swift; sourceTree = "<group>"; };
+		0573C33A2ADBB45B00287FCC /* ARAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARAction.swift; sourceTree = "<group>"; };
+		0573C33C2ADBB4BA00287FCC /* ARManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +43,8 @@
 		056431D92AD59DAF003B1A1F = {
 			isa = PBXGroup;
 			children = (
+				0573C33C2ADBB4BA00287FCC /* ARManager.swift */,
+				0573C33A2ADBB45B00287FCC /* ARAction.swift */,
 				056431E42AD59DAF003B1A1F /* ARKIT Basic */,
 				056431E32AD59DAF003B1A1F /* Products */,
 			);
@@ -52,7 +62,9 @@
 			isa = PBXGroup;
 			children = (
 				056431E52AD59DAF003B1A1F /* ARKIT_BasicApp.swift */,
-				056431E72AD59DAF003B1A1F /* ContentView.swift */,
+				0573C3342ADB935500287FCC /* ViewModel */,
+				0573C3332ADB934D00287FCC /* Model */,
+				0573C3322ADB934200287FCC /* View */,
 				056431E92AD59DB1003B1A1F /* Assets.xcassets */,
 				056431EB2AD59DB1003B1A1F /* Preview Content */,
 			);
@@ -65,6 +77,38 @@
 				056431EC2AD59DB1003B1A1F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0573C3322ADB934200287FCC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				056431E72AD59DAF003B1A1F /* ContentView.swift */,
+				0573C3392ADB94F700287FCC /* Custom ARView Files */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0573C3332ADB934D00287FCC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0573C3342ADB935500287FCC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0573C3392ADB94F700287FCC /* Custom ARView Files */ = {
+			isa = PBXGroup;
+			children = (
+				0573C3352ADB938C00287FCC /* CustomARView.swift */,
+				0573C3372ADB947600287FCC /* CustomARViewRepresentable.swift */,
+			);
+			path = "Custom ARView Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +182,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				056431E82AD59DAF003B1A1F /* ContentView.swift in Sources */,
+				0573C33B2ADBB45B00287FCC /* ARAction.swift in Sources */,
+				0573C3362ADB938C00287FCC /* CustomARView.swift in Sources */,
 				056431E62AD59DAF003B1A1F /* ARKIT_BasicApp.swift in Sources */,
+				0573C33D2ADBB4BA00287FCC /* ARManager.swift in Sources */,
+				0573C3382ADB947600287FCC /* CustomARViewRepresentable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +323,7 @@
 				DEVELOPMENT_TEAM = L5LAF377ZJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Required to show ARView";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +353,7 @@
 				DEVELOPMENT_TEAM = L5LAF377ZJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Required to show ARView";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

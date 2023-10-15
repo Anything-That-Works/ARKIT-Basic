@@ -5,4 +5,10 @@
 //  Created by Promal on 15/10/23.
 //
 
-import Foundation
+import SwiftUI
+
+enum ARAction {
+  case placeBlock(color: Color)
+  case removeAllAnchors
+}
+
